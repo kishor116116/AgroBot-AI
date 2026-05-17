@@ -145,7 +145,7 @@ function Chat() {
         try {
 
             const response = await axios.get(
-                `http://localhost:5000/conversations/${currentUser.uid}`
+                `https://agrobot-backend-z6ho.onrender.com/conversations/${currentUser.uid}`
             );
 
             setHistory(response.data);
@@ -173,7 +173,7 @@ function Chat() {
             const response =
                 await axios.get(
 
-                    `http://localhost:5000/weather/${city}`
+                    `https://agrobot-backend-z6ho.onrender.com/weather/${city}`
 
                 );
 
@@ -202,7 +202,7 @@ function Chat() {
             ]);
             speakText(weatherMessage.text);
             await axios.post(
-                "http://localhost:5000/save-message",
+                "https://agrobot-backend-z6ho.onrender.com/save-message",
                 {
 
                     conversationId:
@@ -229,7 +229,7 @@ function Chat() {
             const response =
                 await axios.get(
 
-                    "http://localhost:5000/market-prices"
+                    "https://agrobot-backend-z6ho.onrender.com/market-prices"
 
                 );
 
@@ -259,7 +259,7 @@ function Chat() {
 
 
             await axios.post(
-                "http://localhost:5000/save-message",
+                "https://agrobot-backend-z6ho.onrender.com/save-message",
                 {
 
                     conversationId:
@@ -421,7 +421,7 @@ function Chat() {
 
                 const newConversation =
                     await axios.post(
-                        "http://localhost:5000/new-conversation",
+                        "https://agrobot-backend-z6ho.onrender.com/new-conversation",
                         {
                             userId: user?.uid,
                         }
@@ -436,7 +436,7 @@ function Chat() {
             }
 
             const response = await axios.post(
-                "http://localhost:5000/chat",
+                "https://agrobot-backend-z6ho.onrender.com/chat",
                 {
                     message: currentInput,
                     language,
@@ -488,7 +488,7 @@ function Chat() {
             setLoading(true);
 
             const response = await axios.post(
-                "http://localhost:5000/analyze-image",
+                "https://agrobot-backend-z6ho.onrender.com/analyze-image",
                 formData
             );
 

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://agrobot-backend-z6ho.onrender.com"
+    }
+  ]
+}
