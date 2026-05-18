@@ -720,12 +720,12 @@ function Chat() {
                                                     <FaVolumeUp />
                                                 </button>
 
-                                                <button
+                                                {/* <button
                                                     className="stop-btn"
                                                     onClick={stopSpeaking}
                                                 >
                                                     🔇
-                                                </button>
+                                                </button> */}
 
                                                 <button
                                                     className="copy-btn"
