@@ -1226,3 +1226,69 @@ code {
       translateY(0px);
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .top-bar{
+    gap:10px;
+    padding:10px;
+    flex-wrap:wrap;
+  }
+
+  .chat-container{
+    padding-bottom:140px;
+  }
+
+  .input-area{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:10px;
+
+    gap:8px;
+
+    z-index:1000;
+
+    background:#071426;
+
+    display:flex;
+
+    align-items:center;
+  }
+
+  .chat-input{
+
+    font-size:16px;
+
+    min-height:45px;
+  }
+
+  .send-btn{
+
+    padding:12px 18px;
+
+    font-size:14px;
+  }
+
+  .sidebar{
+
+    position:fixed;
+
+    z-index:1200;
+
+    height:100vh;
+  }
+
+  .sidebar-hidden{
+
+    transform:translateX(-100%);
+  }
+
+}
