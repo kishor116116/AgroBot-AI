@@ -993,7 +993,7 @@ word-wrap: break-word;
 pre {
   background: #020617;
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 26px;
   overflow-x: auto;
   margin-top: 11px;
 }
